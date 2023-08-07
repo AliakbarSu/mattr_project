@@ -31,6 +31,22 @@ Before running the application, make sure you have the following prerequisites i
         npm run server
    ```
 
+The server is listening on `http://localhost:3000`.
+
+path: `/api/issue-credential`
+
+Sample data payload:
+
+```
+{
+    "id": "WALLET_KEY",
+    "name": "Ali",
+    "email": "test@alisultani.com",
+    "dob": "09/09/1999",
+    "photo": "https://example.com/image"
+}
+```
+
 ## Testing
 
 To run the tests, run the following command:
@@ -46,8 +62,6 @@ To build the application, run the following command inside the project's directo
 ```bash
     npm run build
 ```
-
-The server is listening on `http://localhost:3000`.
 
 ## Future Improvements (If had unlimited time)
 
