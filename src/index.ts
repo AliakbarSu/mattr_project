@@ -1,7 +1,8 @@
 import express from 'express'
 const app = express()
+import dotenv from 'dotenv'
 import router from './routes'
 
-app.use('/', router)
+dotenv.config()
 
 app.listen(3000)
