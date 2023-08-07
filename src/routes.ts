@@ -1,11 +1,11 @@
 import express from 'express'
 const router = express.Router()
-import { create_auth_token } from './auth/create_auth_token'
-import { create_issuer } from './credentials/create_issuer'
-import { create_credentails } from './credentials/create_credentails'
-import { encrypt_message } from './credentials/encrypt_message'
-import { send_credentials } from './credentials/send_credentails'
-import { setToken } from './credentials/axios'
+import { create_auth_token } from './auth/get_auth_token'
+import { create_issuer } from './services/create_issuer'
+import { create_credentails } from './services/create_credentails'
+import { encrypt_message } from './services/encrypt_message'
+import { send_credentials } from './services/send_credentails'
+import { setToken } from './services/axios'
 
 router.post('/issue-credential', async function (req, res) {
   const user_credentails = req.body
